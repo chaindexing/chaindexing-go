@@ -13,13 +13,3 @@ type UnsavedContractAddress struct {
 	address                     string
 	contractName                string
 }
-
-type ContractAddress struct {
-	id                          int
-	chainId                     int
-	nextBlockNumberToIngestFrom int
-	nextBlockNumberToHandleFrom int
-	startBlockNumber            int
-	address                     string
-	contractName                string
-}
