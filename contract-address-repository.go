@@ -15,10 +15,6 @@ func NewContractAddressRepository(db *Database) ContractAddressRepository {
 	return ContractAddressRepository{database}
 }
 
-func (c ContractAddressRepository) Create(contractAddress ContractAddress) error {
-	return c.db.Create(&contractAddress)
-}
-
 func (c ContractAddressRepository) CreateMany(contractAddresses ...ContractAddress) error {
 	return c.db.Create(contractAddresses)
 }

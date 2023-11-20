@@ -10,7 +10,7 @@ psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-E
         contract_name VARCHAR(255) NOT NULL,
         chain_id INT NOT NULL,
         start_block_number BIGINT NOT NULL,
-        next_block_to_ingest_from BIGINT NOT NULL,
-        next_block_to_handle_from BIGINT NOT NULL
+        next_block_number_to_ingest_from BIGINT NOT NULL,
+        next_block_number_to_handle_from BIGINT NOT NULL
     );
 EOSQL
